@@ -15,4 +15,9 @@
 -> I have even attached all the data in form of csv files.
 
 
+*IMP* : I know "https://bank-details.herokuapp.com/branch/" and "https://bank-details.herokuapp.com/bank_branch/" links dont work because it is fetching too much data around 127857 rows but if user add /ifsc/ and /id/ value in respesctive links i will show data.
+Example 1.) "https://bank-details.herokuapp.com/branch/ABHY0065008" where 'ABHY0065008' is ifsc code
+        2.) "https://bank-details.herokuapp.com/bank_branch/25" where '25' is id
+(But i will surely work on that and try to mininize data or find another alternative)
+
 *NOTE* : I am not used to for writing readme files so if you have any query or doubt about my work please messege me i will love to solve your doubts.
