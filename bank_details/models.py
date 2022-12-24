@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class  banks(models.Model):
     id = models.IntegerField(primary_key=True,null=False)
     name = models.CharField(max_length=49)
@@ -20,8 +19,8 @@ class branches(models.Model):
 
     
 class bank_branches(models.Model):
-    bb_id = models.AutoField(primary_key=True)
-    ifsc = models.ForeignKey(branches,on_delete=models.CASCADE)
+    id = models.AutoField(primary_key=True)
+    ifsc = models.CharField(max_length=11)
     branch = models.CharField(max_length=74)
     address = models.CharField(max_length=195)
     city = models.CharField(max_length=50)
