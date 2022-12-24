@@ -1,1 +1,1 @@
-web: gunicorn banks.wsgi
+web: gunicorn bank_details.wsgi
