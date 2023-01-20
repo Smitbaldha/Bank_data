@@ -1,11 +1,13 @@
-from django.shortcuts import render
+# from django.shortcuts import render
 from rest_framework import viewsets
 from .models import banks,bank_branches,branches
+
 from .serializer import banksserializer,branchserializer,bank_branchserializer
 
 class banksviewsets(viewsets.ModelViewSet):
-    queryset = banks.objects.all()
-    serializer_class = banksserializer
+     
+        queryset = banks.objects.all()
+        serializer_class = banksserializer
     
 class branchviewsets(viewsets.ModelViewSet):
     queryset = branches.objects.order_by()
